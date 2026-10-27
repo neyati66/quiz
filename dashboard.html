@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard — Quizzy</title>
+<meta name="description" content="Your Quizzy dashboard: active tests, recent attempts and subject shortcuts." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <nav>
+      <a class="active" href="./dashboard.html">Dashboard</a>
+      <a href="./subjects.html">Subjects</a>
+      <a href="./test-selection.html">Tests</a>
+      <a href="./quiz.html">Quiz view</a>
+      <a href="./result.html">Results &amp; review</a>
+      <a href="./leaderboard.html">People</a>
+      <a href="./profile.html">Profile</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./login.html">Sign out</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div><span class="pill">Overview</span><h2 style="margin-top:12px">Dashboard</h2><p class="small">Your activity summary appears here once you start.</p></div>
+      <a class="btn" href="./test-selection.html">Start a test</a>
+    </div>
+
+    <div class="grid g4" data-dynamic="user-stats">
+      <div class="card"><small class="muted">Tests attempted</small><h2 style="margin-top:6px">—</h2></div>
+      <div class="card"><small class="muted">Questions answered</small><h2 style="margin-top:6px">—</h2></div>
+      <div class="card"><small class="muted">Average score</small><h2 style="margin-top:6px">—</h2></div>
+      <div class="card"><small class="muted">Subjects active</small><h2 style="margin-top:6px">—</h2></div>
+    </div>
+
+    <div class="grid g2" style="margin-top:22px">
+      <section class="card" data-dynamic="recent-attempts">
+        <div class="row between"><h3>Recent attempts</h3><a class="small link" href="./result.html">All results</a></div>
+        <div class="empty" style="margin-top:14px"><div class="icon-chip">🗂️</div><b>No attempts yet</b><p class="small">Finished tests will be listed here.</p><a class="btn btn-sm btn-ghost" href="./test-selection.html" style="margin-top:12px">Choose a test</a></div>
+      </section>
+
+      <section class="card" data-dynamic="continue-learning">
+        <h3>Continue where you left off</h3>
+        <div class="empty" style="margin-top:14px"><div class="icon-chip" style="background:var(--mint)">⏱️</div><b>Nothing in progress</b><p class="small">Paused tests will show up here.</p></div>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:22px" data-dynamic="progress-by-subject">
+      <div class="row between"><h3>Progress by subject</h3><a class="small link" href="./subjects.html">Manage subjects</a></div>
+      <div class="stack" style="margin-top:16px">
+        <div><div class="row between small muted"><span>Subject slot</span><span>—</span></div><div class="progress" style="margin-top:8px"><i></i></div></div>
+        <div><div class="row between small muted"><span>Subject slot</span><span>—</span></div><div class="progress" style="margin-top:8px"><i></i></div></div>
+        <div><div class="row between small muted"><span>Subject slot</span><span>—</span></div><div class="progress" style="margin-top:8px"><i></i></div></div>
+      </div>
+    </section>
+  </main>
+</div>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/dashboard.js"></script>
+</body>
+</html>

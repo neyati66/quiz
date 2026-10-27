@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Result &amp; review — Quizzy</title>
+<meta name="description" content="See your Quizzy attempt summary and review every question with explanations." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <nav>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./subjects.html">Subjects</a>
+      <a href="./test-selection.html">Tests</a>
+      <a href="./quiz.html">Quiz view</a>
+      <a class="active" href="./result.html">Results &amp; review</a>
+      <a href="./leaderboard.html">People</a>
+      <a href="./profile.html">Profile</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div><span class="pill">Attempt summary</span><h2 style="margin-top:12px">Result &amp; review</h2><p class="small">Scores and per-question review load here after an attempt.</p></div>
+      <div class="row"><a class="btn btn-ghost" href="./test-selection.html">Retake</a><a class="btn" href="./leaderboard.html">View leaderboard</a></div>
+    </div>
+
+    <div class="grid g4" data-dynamic="result-summary">
+      <div class="card"><small class="muted">Score</small><h2 style="margin-top:6px">—</h2></div>
+      <div class="card"><small class="muted">Correct</small><h2 style="margin-top:6px">—</h2></div>
+      <div class="card"><small class="muted">Incorrect</small><h2 style="margin-top:6px">—</h2></div>
+      <div class="card"><small class="muted">Time taken</small><h2 style="margin-top:6px">—</h2></div>
+    </div>
+
+    <div class="grid g2" style="margin-top:22px">
+      <section class="card" data-dynamic="accuracy-breakdown">
+        <h3>Accuracy breakdown</h3>
+        <div class="stack" style="margin-top:16px">
+          <div><div class="row between small muted"><span>Topic slot</span><span>—</span></div><div class="progress" style="margin-top:8px"><i></i></div></div>
+          <div><div class="row between small muted"><span>Topic slot</span><span>—</span></div><div class="progress" style="margin-top:8px"><i></i></div></div>
+          <div><div class="row between small muted"><span>Topic slot</span><span>—</span></div><div class="progress" style="margin-top:8px"><i></i></div></div>
+        </div>
+      </section>
+      <section class="card" data-dynamic="suggestions">
+        <h3>What to revisit</h3>
+        <div class="empty" style="margin-top:14px"><div class="icon-chip" style="background:var(--lemon)">💡</div><b>No suggestions yet</b><p class="small">Weak topics appear once a test is submitted.</p></div>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:22px" data-dynamic="question-review">
+      <div class="row between"><h3>Question-by-question review</h3><div class="row"><span class="tag">Correct</span><span class="tag rose">Incorrect</span><span class="tag lemon">Skipped</span></div></div>
+      <div class="stack" style="margin-top:16px">
+        <article class="card"><div class="row between small muted"><span>Question —</span><span class="tag sky">Status —</span></div><h3 style="margin-top:10px;font-size:16px">Question text placeholder</h3><div class="stack" style="margin-top:12px"><div class="option">Your answer: —</div><div class="option">Correct answer: —</div></div><p class="small">Explanation will appear here.</p></article>
+        <article class="card"><div class="row between small muted"><span>Question —</span><span class="tag sky">Status —</span></div><h3 style="margin-top:10px;font-size:16px">Question text placeholder</h3><div class="stack" style="margin-top:12px"><div class="option">Your answer: —</div><div class="option">Correct answer: —</div></div><p class="small">Explanation will appear here.</p></article>
+      </div>
+    </section>
+  </main>
+</div>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/result.js"></script>
+</body>
+</html>

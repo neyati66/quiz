@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "h1",
+    "cat": "HTML",
+    "q": "Which tag is used to define an unordered list?",
+    "options": [
+      "<ol>",
+      "<ul>",
+      "<list>",
+      "<li>"
+    ],
+    "correct": 1,
+    "explain": "<ul> creates an unordered (bulleted) list; <li> defines each item inside it."
+  },
+  {
+    "id": "h2",
+    "cat": "HTML",
+    "q": "What does the 'src' attribute do in an <img> tag?",
+    "options": [
+      "Sets image size",
+      "Sets alt text",
+      "Points to the image file",
+      "Sets image border"
+    ],
+    "correct": 2,
+    "explain": "'src' (source) tells the browser where to fetch the image file from."
+  },
+  {
+    "id": "h3",
+    "cat": "HTML",
+    "q": "Which element is used to link an external CSS file?",
+    "options": [
+      "<style>",
+      "<script>",
+      "<link>",
+      "<css>"
+    ],
+    "correct": 2,
+    "explain": "<link rel='stylesheet' href='...'> connects an external CSS file to the HTML page."
+  },
+  {
+    "id": "h4",
+    "cat": "HTML",
+    "q": "What is the correct HTML for creating a hyperlink?",
+    "options": [
+      "<a url='...'>",
+      "<a href='...'>",
+      "<link href='...'>",
+      "<hlink>"
+    ],
+    "correct": 1,
+    "explain": "Anchor tags use the 'href' attribute to define the link destination."
+  },
+  {
+    "id": "h5",
+    "cat": "HTML",
+    "q": "Which tag is the root element of every HTML page?",
+    "options": [
+      "<body>",
+      "<head>",
+      "<html>",
+      "<root>"
+    ],
+    "correct": 2,
+    "explain": "<html> wraps the entire document; <head> and <body> sit inside it."
+  },
+  {
+    "id": "h6",
+    "cat": "HTML",
+    "q": "Which attribute makes an input field mandatory?",
+    "options": [
+      "mandatory",
+      "required",
+      "validate",
+      "must"
+    ],
+    "correct": 1,
+    "explain": "The 'required' boolean attribute prevents form submission until filled."
+  },
+  {
+    "id": "h7",
+    "cat": "HTML",
+    "q": "What does semantic HTML mean?",
+    "options": [
+      "Using colorful tags",
+      "Tags that describe their meaning/content",
+      "Tags with animations",
+      "Using only div and span"
+    ],
+    "correct": 1,
+    "explain": "Semantic tags like <header>, <nav>, <article> describe the meaning of the content they wrap."
+  },
+  {
+    "id": "h8",
+    "cat": "HTML",
+    "q": "Which tag is used to embed JavaScript in HTML?",
+    "options": [
+      "<js>",
+      "<javascript>",
+      "<script>",
+      "<code>"
+    ],
+    "correct": 2,
+    "explain": "<script> either contains inline JS or links an external file via 'src'."
+  },
+  {
+    "id": "h9",
+    "cat": "HTML",
+    "q": "What is the purpose of the 'alt' attribute on <img>?",
+    "options": [
+      "Sets image alignment",
+      "Alternate text if image fails to load / for accessibility",
+      "Sets image opacity",
+      "Adds animation"
+    ],
+    "correct": 1,
+    "explain": "'alt' provides descriptive text for screen readers and shows if the image fails to load."
+  },
+  {
+    "id": "h10",
+    "cat": "HTML",
+    "q": "Which tag defines a table row?",
+    "options": [
+      "<td>",
+      "<th>",
+      "<tr>",
+      "<row>"
+    ],
+    "correct": 2,
+    "explain": "<tr> = table row, <td> = table data cell, <th> = table header cell."
+  },
+  {
+    "id": "h11",
+    "cat": "HTML",
+    "q": "What does the <meta charset='UTF-8'> tag do?",
+    "options": [
+      "Sets page title",
+      "Defines character encoding",
+      "Loads a font",
+      "Sets viewport size"
+    ],
+    "correct": 1,
+    "explain": "It tells the browser to interpret the document using UTF-8 character encoding."
+  },
+  {
+    "id": "h12",
+    "cat": "HTML",
+    "q": "Which HTML5 element is used for navigation links?",
+    "options": [
+      "<navigate>",
+      "<nav>",
+      "<links>",
+      "<menu>"
+    ],
+    "correct": 1,
+    "explain": "<nav> is the semantic element for a section of navigation links."
+  },
+  {
+    "id": "c1",
+    "cat": "CSS",
+    "q": "Which property changes text color?",
+    "options": [
+      "font-color",
+      "text-color",
+      "color",
+      "fg-color"
+    ],
+    "correct": 2,
+    "explain": "The 'color' property sets the foreground (text) color of an element."
+  },
+  {
+    "id": "c2",
+    "cat": "CSS",
+    "q": "Which CSS selector targets an element with id='main'?",
+    "options": [
+      ".main",
+      "#main",
+      "*main",
+      "main"
+    ],
+    "correct": 1,
+    "explain": "'#' selects by id, '.' selects by class."
+  },
+  {
+    "id": "c3",
+    "cat": "CSS",
+    "q": "What does 'display: flex' do to a container?",
+    "options": [
+      "Hides it",
+      "Makes it a flexible box layout container",
+      "Rotates children",
+      "Adds a border"
+    ],
+    "correct": 1,
+    "explain": "Flexbox lays out children in a row or column with powerful alignment control."
+  },
+  {
+    "id": "c4",
+    "cat": "CSS",
+    "q": "Which property controls spacing outside an element's border?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "gap"
+    ],
+    "correct": 1,
+    "explain": "'margin' is space outside the border; 'padding' is space inside it."
+  },
+  {
+    "id": "c5",
+    "cat": "CSS",
+    "q": "What is the correct CSS box model order (outside to inside)?",
+    "options": [
+      "Content, Padding, Border, Margin",
+      "Margin, Border, Padding, Content",
+      "Border, Margin, Padding, Content",
+      "Padding, Margin, Content, Border"
+    ],
+    "correct": 1,
+    "explain": "From outside in: Margin -> Border -> Padding -> Content."
+  },
+  {
+    "id": "c6",
+    "cat": "CSS",
+    "q": "Which unit is relative to the root element's font size?",
+    "options": [
+      "em",
+      "px",
+      "rem",
+      "%"
+    ],
+    "correct": 2,
+    "explain": "'rem' = root em, always relative to the <html> font-size, unlike 'em' which is relative to the parent."
+  },
+  {
+    "id": "c7",
+    "cat": "CSS",
+    "q": "How do you make an element's position fixed relative to the viewport?",
+    "options": [
+      "position: relative",
+      "position: absolute",
+      "position: fixed",
+      "position: sticky"
+    ],
+    "correct": 2,
+    "explain": "'position: fixed' pins an element to the viewport; it doesn't move on scroll."
+  },
+  {
+    "id": "c8",
+    "cat": "CSS",
+    "q": "Which property is used to create rounded corners?",
+    "options": [
+      "corner-radius",
+      "border-radius",
+      "round-corner",
+      "border-round"
+    ],
+    "correct": 1,
+    "explain": "'border-radius' rounds the corners of an element's box."
+  },
+  {
+    "id": "c9",
+    "cat": "CSS",
+    "q": "What does 'z-index' control?",
+    "options": [
+      "Element width",
+      "Stacking order along the z-axis",
+      "Font size",
+      "Animation speed"
+    ],
+    "correct": 1,
+    "explain": "Higher z-index values stack an element in front of elements with lower values (on positioned elements)."
+  },
+  {
+    "id": "c10",
+    "cat": "CSS",
+    "q": "Which pseudo-class targets an element on mouse hover?",
+    "options": [
+      ":focus",
+      ":hover",
+      ":active",
+      ":visited"
+    ],
+    "correct": 1,
+    "explain": "':hover' applies styles while the pointer is over the element."
+  },
+  {
+    "id": "c11",
+    "cat": "CSS",
+    "q": "What does 'CSS Grid' primarily help with?",
+    "options": [
+      "Animating text",
+      "Two-dimensional row & column layouts",
+      "Adding shadows",
+      "Loading fonts"
+    ],
+    "correct": 1,
+    "explain": "CSS Grid is designed for two-dimensional layouts (rows and columns together)."
+  },
+  {
+    "id": "c12",
+    "cat": "CSS",
+    "q": "Which media query targets screens narrower than 600px?",
+    "options": [
+      "@media (max-width: 600px)",
+      "@media (min-width: 600px)",
+      "@screen (width: 600px)",
+      "@media (width < 600)"
+    ],
+    "correct": 0,
+    "explain": "'max-width: 600px' applies styles when the viewport is 600px or narrower."
+  },
+  {
+    "id": "j1",
+    "cat": "JavaScript",
+    "q": "Which keyword declares a block-scoped variable that can be reassigned?",
+    "options": [
+      "const",
+      "var",
+      "let",
+      "static"
+    ],
+    "correct": 2,
+    "explain": "'let' is block-scoped and reassignable; 'const' is block-scoped but not reassignable."
+  },
+  {
+    "id": "j2",
+    "cat": "JavaScript",
+    "q": "What does '===' check in JavaScript?",
+    "options": [
+      "Value only",
+      "Type only",
+      "Value and type (strict equality)",
+      "Reference only"
+    ],
+    "correct": 2,
+    "explain": "'===' compares both value and type without type coercion, unlike '=='."
+  },
+  {
+    "id": "j3",
+    "cat": "JavaScript",
+    "q": "Which method adds an element to the end of an array?",
+    "options": [
+      "push()",
+      "pop()",
+      "shift()",
+      "unshift()"
+    ],
+    "correct": 0,
+    "explain": "'push()' appends one or more elements to the end of an array."
+  },
+  {
+    "id": "j4",
+    "cat": "JavaScript",
+    "q": "What does 'JSON.stringify()' do?",
+    "options": [
+      "Parses a JSON string into an object",
+      "Converts a JS object into a JSON string",
+      "Deletes JSON data",
+      "Validates JSON"
+    ],
+    "correct": 1,
+    "explain": "'JSON.stringify()' serializes a JS value into a JSON-formatted string."
+  },
+  {
+    "id": "j5",
+    "cat": "JavaScript",
+    "q": "Which function is used to select an element by its id in the DOM?",
+    "options": [
+      "document.querySelectorId()",
+      "document.getElementById()",
+      "document.selectId()",
+      "document.findById()"
+    ],
+    "correct": 1,
+    "explain": "'document.getElementById()' returns the element with the matching id."
+  },
+  {
+    "id": "j6",
+    "cat": "JavaScript",
+    "q": "What is a closure in JavaScript?",
+    "options": [
+      "A loop that never ends",
+      "A function that remembers variables from its outer scope",
+      "A way to close a browser tab",
+      "A CSS animation"
+    ],
+    "correct": 1,
+    "explain": "A closure is formed when a function retains access to variables from its enclosing scope even after that scope has finished executing."
+  },
+  {
+    "id": "j7",
+    "cat": "JavaScript",
+    "q": "Which array method creates a new array with results of calling a function on every element?",
+    "options": [
+      "forEach()",
+      "map()",
+      "filter()",
+      "reduce()"
+    ],
+    "correct": 1,
+    "explain": "'map()' returns a new array where each element is the result of the callback."
+  },
+  {
+    "id": "j8",
+    "cat": "JavaScript",
+    "q": "What does 'addEventListener' do?",
+    "options": [
+      "Removes an event",
+      "Attaches a handler function to an event on an element",
+      "Creates a new element",
+      "Deletes an element"
+    ],
+    "correct": 1,
+    "explain": "'addEventListener(event, handler)' registers a function to run when that event fires."
+  },
+  {
+    "id": "j9",
+    "cat": "JavaScript",
+    "q": "What will 'typeof null' return in JavaScript?",
+    "options": [
+      "'null'",
+      "'undefined'",
+      "'object'",
+      "'number'"
+    ],
+    "correct": 2,
+    "explain": "This is a famous JS quirk: 'typeof null' returns 'object' due to a legacy bug kept for compatibility."
+  },
+  {
+    "id": "j10",
+    "cat": "JavaScript",
+    "q": "Which method converts a JSON string into a JS object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.toObject()",
+      "JSON.decode()"
+    ],
+    "correct": 0,
+    "explain": "'JSON.parse()' takes a JSON string and returns the corresponding JS value/object."
+  },
+  {
+    "id": "j11",
+    "cat": "JavaScript",
+    "q": "What does 'localStorage' store data as?",
+    "options": [
+      "Numbers only",
+      "Strings only",
+      "Any JS object directly",
+      "Binary data"
+    ],
+    "correct": 1,
+    "explain": "localStorage only stores strings — objects must be serialized with JSON.stringify() first."
+  },
+  {
+    "id": "j12",
+    "cat": "JavaScript",
+    "q": "Which keyword is used to handle exceptions in JavaScript?",
+    "options": [
+      "catch",
+      "except",
+      "rescue",
+      "handle"
+    ],
+    "correct": 0,
+    "explain": "'try...catch' blocks let you handle errors: code in 'try' runs, errors are caught in 'catch'."
+  },
+  {
+    "id": "py1",
+    "cat": "Python",
+    "q": "Which keyword is used to define a function in Python?",
+    "options": [
+      "func",
+      "def",
+      "function",
+      "lambda"
+    ],
+    "correct": 1,
+    "explain": "'def' starts a function definition in Python."
+  },
+  {
+    "id": "py2",
+    "cat": "Python",
+    "q": "Which of these data types is immutable in Python?",
+    "options": [
+      "list",
+      "dict",
+      "tuple",
+      "set"
+    ],
+    "correct": 2,
+    "explain": "Tuples cannot be changed after creation; lists, dicts and sets are mutable."
+  },
+  {
+    "id": "py3",
+    "cat": "Python",
+    "q": "What does the 'len()' function return?",
+    "options": [
+      "Memory size",
+      "Number of items",
+      "Data type",
+      "Index position"
+    ],
+    "correct": 1,
+    "explain": "'len()' returns the number of items in a sequence or collection."
+  },
+  {
+    "id": "py4",
+    "cat": "Python",
+    "q": "Which symbol starts a single-line comment in Python?",
+    "options": [
+      "//",
+      "#",
+      "--",
+      "/* */"
+    ],
+    "correct": 1,
+    "explain": "'#' marks the rest of the line as a comment in Python."
+  },
+  {
+    "id": "py5",
+    "cat": "Python",
+    "q": "What does 'type([])' return in Python?",
+    "options": [
+      "<class 'list'>",
+      "<class 'array'>",
+      "<class 'tuple'>",
+      "<class 'dict'>"
+    ],
+    "correct": 0,
+    "explain": "An empty pair of square brackets creates a list, so its type is 'list'."
+  },
+  {
+    "id": "py6",
+    "cat": "Python",
+    "q": "Which method adds an item to the end of a list?",
+    "options": [
+      "append()",
+      "insert()",
+      "add()",
+      "extend()"
+    ],
+    "correct": 0,
+    "explain": "'append()' adds a single item to the end of a list in place."
+  },
+  {
+    "id": "py7",
+    "cat": "Python",
+    "q": "What does 'self' refer to inside a Python class method?",
+    "options": [
+      "The class itself",
+      "The current instance of the class",
+      "A global variable",
+      "The parent class"
+    ],
+    "correct": 1,
+    "explain": "'self' refers to the specific object instance the method is being called on."
+  },
+  {
+    "id": "py8",
+    "cat": "Python",
+    "q": "Which syntax creates a dictionary in Python?",
+    "options": [
+      "{}",
+      "[]",
+      "()",
+      "<>"
+    ],
+    "correct": 0,
+    "explain": "Curly braces '{}' create a dictionary (or an empty dict when used alone)."
+  },
+  {
+    "id": "py9",
+    "cat": "Python",
+    "q": "What is the standard file extension for Python source files?",
+    "options": [
+      ".pt",
+      ".py",
+      ".pyt",
+      ".python"
+    ],
+    "correct": 1,
+    "explain": "Python source files use the '.py' extension."
+  },
+  {
+    "id": "py10",
+    "cat": "Python",
+    "q": "Which keyword is used to catch exceptions in Python?",
+    "options": [
+      "catch",
+      "except",
+      "rescue",
+      "handle"
+    ],
+    "correct": 1,
+    "explain": "Python uses 'try...except' rather than 'catch' to handle exceptions."
+  },
+  {
+    "id": "py11",
+    "cat": "Python",
+    "q": "What values does 'range(5)' generate?",
+    "options": [
+      "1 to 5",
+      "0 to 4",
+      "0 to 5",
+      "1 to 4"
+    ],
+    "correct": 1,
+    "explain": "'range(5)' produces 0, 1, 2, 3, 4 — it stops before the given number."
+  },
+  {
+    "id": "py12",
+    "cat": "Python",
+    "q": "Which operator performs exponentiation in Python?",
+    "options": [
+      "^",
+      "**",
+      "exp()",
+      "^^"
+    ],
+    "correct": 1,
+    "explain": "'**' raises the left operand to the power of the right one, e.g. 2**3 = 8."
+  },
+  {
+    "id": "jv1",
+    "cat": "Java",
+    "q": "Which keyword is used to create a class in Java?",
+    "options": [
+      "class",
+      "struct",
+      "object",
+      "define"
+    ],
+    "correct": 0,
+    "explain": "'class' declares a new class in Java."
+  },
+  {
+    "id": "jv2",
+    "cat": "Java",
+    "q": "What is the entry point method of a Java application?",
+    "options": [
+      "start()",
+      "main()",
+      "run()",
+      "init()"
+    ],
+    "correct": 1,
+    "explain": "The JVM looks for 'public static void main(String[] args)' to start execution."
+  },
+  {
+    "id": "jv3",
+    "cat": "Java",
+    "q": "Which keyword prevents a class from being subclassed?",
+    "options": [
+      "static",
+      "final",
+      "private",
+      "const"
+    ],
+    "correct": 1,
+    "explain": "A class marked 'final' cannot be extended by another class."
+  },
+  {
+    "id": "jv4",
+    "cat": "Java",
+    "q": "What is the default value of a boolean instance variable in Java?",
+    "options": [
+      "true",
+      "false",
+      "0",
+      "null"
+    ],
+    "correct": 1,
+    "explain": "Uninitialized boolean fields default to 'false' in Java."
+  },
+  {
+    "id": "jv5",
+    "cat": "Java",
+    "q": "Which collection allows duplicate elements and preserves insertion order?",
+    "options": [
+      "HashSet",
+      "ArrayList",
+      "TreeSet",
+      "HashMap"
+    ],
+    "correct": 1,
+    "explain": "'ArrayList' is an ordered, index-based list that permits duplicates."
+  },
+  {
+    "id": "jv6",
+    "cat": "Java",
+    "q": "What does JVM stand for?",
+    "options": [
+      "Java Virtual Machine",
+      "Java Verified Method",
+      "Java Variable Manager",
+      "Java Virtual Module"
+    ],
+    "correct": 0,
+    "explain": "The JVM executes compiled Java bytecode on any platform."
+  },
+  {
+    "id": "jv7",
+    "cat": "Java",
+    "q": "Which keyword is used to catch exceptions in Java?",
+    "options": [
+      "except",
+      "catch",
+      "rescue",
+      "handle"
+    ],
+    "correct": 1,
+    "explain": "Java uses 'try...catch' blocks, with 'catch' handling thrown exceptions."
+  },
+  {
+    "id": "jv8",
+    "cat": "Java",
+    "q": "Which operator compares object references (not content) in Java?",
+    "options": [
+      "==",
+      "equals()",
+      "===",
+      "compareTo()"
+    ],
+    "correct": 0,
+    "explain": "'==' checks if two references point to the same object; 'equals()' compares content."
+  },
+  {
+    "id": "jv9",
+    "cat": "Java",
+    "q": "What is the size of an 'int' in Java?",
+    "options": [
+      "16-bit",
+      "32-bit",
+      "64-bit",
+      "8-bit"
+    ],
+    "correct": 1,
+    "explain": "Java's 'int' is always a signed 32-bit integer, regardless of platform."
+  },
+  {
+    "id": "jv10",
+    "cat": "Java",
+    "q": "Which keyword is used for class inheritance in Java?",
+    "options": [
+      "implements",
+      "extends",
+      "inherits",
+      "super"
+    ],
+    "correct": 1,
+    "explain": "'extends' lets one class inherit fields and methods from another class."
+  },
+  {
+    "id": "jv11",
+    "cat": "Java",
+    "q": "Which method runs automatically when an object is created?",
+    "options": [
+      "main()",
+      "the constructor",
+      "finalize()",
+      "init()"
+    ],
+    "correct": 1,
+    "explain": "A class's constructor runs automatically whenever 'new' creates an object."
+  },
+  {
+    "id": "jv12",
+    "cat": "Java",
+    "q": "What does the 'static' keyword mean on a Java member?",
+    "options": [
+      "It belongs to each instance",
+      "It belongs to the class, not any instance",
+      "It cannot be changed",
+      "It runs only once ever"
+    ],
+    "correct": 1,
+    "explain": "'static' members belong to the class itself and are shared across all instances."
+  },
+  {
+    "id": "cpp1",
+    "cat": "C++",
+    "q": "Which symbol is used to declare a pointer in C++?",
+    "options": [
+      "&",
+      "*",
+      "#",
+      "%"
+    ],
+    "correct": 1,
+    "explain": "'*' before a variable name declares it as a pointer."
+  },
+  {
+    "id": "cpp2",
+    "cat": "C++",
+    "q": "What does 'cout' do in C++?",
+    "options": [
+      "Reads input",
+      "Outputs data to the console",
+      "Declares a class",
+      "Ends the program"
+    ],
+    "correct": 1,
+    "explain": "'cout' (character output) sends data to standard output."
+  },
+  {
+    "id": "cpp3",
+    "cat": "C++",
+    "q": "Which header is required for standard input/output in C++?",
+    "options": [
+      "<stdio.h>",
+      "<iostream>",
+      "<conio.h>",
+      "<iomanip>"
+    ],
+    "correct": 1,
+    "explain": "'<iostream>' provides 'cin', 'cout' and related stream objects."
+  },
+  {
+    "id": "cpp4",
+    "cat": "C++",
+    "q": "What is the default access specifier for members of a C++ class?",
+    "options": [
+      "public",
+      "private",
+      "protected",
+      "none"
+    ],
+    "correct": 1,
+    "explain": "Class members are 'private' by default (structs default to 'public')."
+  },
+  {
+    "id": "cpp5",
+    "cat": "C++",
+    "q": "Which keyword defines a constant in C++?",
+    "options": [
+      "final",
+      "const",
+      "static",
+      "readonly"
+    ],
+    "correct": 1,
+    "explain": "'const' marks a variable's value as unmodifiable after initialization."
+  },
+  {
+    "id": "cpp6",
+    "cat": "C++",
+    "q": "What is function overloading in C++?",
+    "options": [
+      "Multiple functions with the same name but different parameters",
+      "A function calling itself",
+      "A function with no return type",
+      "A function nested inside another"
+    ],
+    "correct": 0,
+    "explain": "Overloaded functions share a name but differ in parameter type or count."
+  },
+  {
+    "id": "cpp7",
+    "cat": "C++",
+    "q": "Which operator allocates memory dynamically in C++?",
+    "options": [
+      "malloc",
+      "new",
+      "alloc",
+      "create"
+    ],
+    "correct": 1,
+    "explain": "'new' allocates memory on the heap and returns a pointer to it."
+  },
+  {
+    "id": "cpp8",
+    "cat": "C++",
+    "q": "What does '::' represent in C++?",
+    "options": [
+      "Scope resolution operator",
+      "Pointer operator",
+      "Logical AND",
+      "Bitwise OR"
+    ],
+    "correct": 0,
+    "explain": "'::' resolves which scope (class or namespace) a name belongs to."
+  },
+  {
+    "id": "cpp9",
+    "cat": "C++",
+    "q": "Which OOP concept lets a derived class provide its own version of a base class method?",
+    "options": [
+      "Encapsulation",
+      "Polymorphism",
+      "Abstraction",
+      "Overloading"
+    ],
+    "correct": 1,
+    "explain": "Polymorphism (via virtual functions) allows derived classes to override base behavior."
+  },
+  {
+    "id": "cpp10",
+    "cat": "C++",
+    "q": "What is a destructor in C++?",
+    "options": [
+      "A function that creates objects",
+      "A function called automatically when an object is destroyed",
+      "A type of variable",
+      "A loop construct"
+    ],
+    "correct": 1,
+    "explain": "A destructor (e.g. '~ClassName()') runs cleanup code when an object goes out of scope."
+  },
+  {
+    "id": "cpp11",
+    "cat": "C++",
+    "q": "Which keyword frees memory allocated with 'new' in C++?",
+    "options": [
+      "free",
+      "delete",
+      "remove",
+      "destroy"
+    ],
+    "correct": 1,
+    "explain": "'delete' releases memory previously allocated with 'new'."
+  },
+  {
+    "id": "cpp12",
+    "cat": "C++",
+    "q": "What is the correct way to declare a reference variable in C++?",
+    "options": [
+      "int &x = y;",
+      "int *x = y;",
+      "int x = &y;",
+      "int x = *y;"
+    ],
+    "correct": 0,
+    "explain": "'int &x = y;' makes 'x' an alias referring directly to 'y'."
+  },
+  {
+    "id": "ap1",
+    "cat": "Aptitude",
+    "q": "A train travels 60 km in 1.5 hours. What is its speed?",
+    "options": [
+      "30 km/h",
+      "40 km/h",
+      "45 km/h",
+      "50 km/h"
+    ],
+    "correct": 1,
+    "explain": "Speed = distance / time = 60 / 1.5 = 40 km/h."
+  },
+  {
+    "id": "ap2",
+    "cat": "Aptitude",
+    "q": "What is 15% of 200?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct": 2,
+    "explain": "15% of 200 = 0.15 × 200 = 30."
+  },
+  {
+    "id": "ap3",
+    "cat": "Aptitude",
+    "q": "The ratio of boys to girls is 3:2. If there are 30 boys, how many girls are there?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "10"
+    ],
+    "correct": 1,
+    "explain": "One ratio unit = 30 / 3 = 10, so girls = 2 × 10 = 20."
+  },
+  {
+    "id": "ap4",
+    "cat": "Aptitude",
+    "q": "A shopkeeper sells an item for $120 after a 20% profit. What was the cost price?",
+    "options": [
+      "$90",
+      "$96",
+      "$100",
+      "$110"
+    ],
+    "correct": 2,
+    "explain": "Cost price = 120 / 1.2 = $100."
+  },
+  {
+    "id": "ap5",
+    "cat": "Aptitude",
+    "q": "What is the next number in the series 2, 4, 8, 16, ___?",
+    "options": [
+      "24",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct": 3,
+    "explain": "Each term doubles the previous one: 16 × 2 = 32."
+  },
+  {
+    "id": "ap6",
+    "cat": "Aptitude",
+    "q": "If 5 workers complete a task in 12 days, how many days will 10 workers take?",
+    "options": [
+      "6 days",
+      "8 days",
+      "10 days",
+      "24 days"
+    ],
+    "correct": 0,
+    "explain": "Work is constant: 5 × 12 = 60 worker-days; 60 / 10 = 6 days."
+  },
+  {
+    "id": "ap7",
+    "cat": "Aptitude",
+    "q": "What is the average of 10, 20, 30 and 40?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct": 1,
+    "explain": "Average = (10+20+30+40) / 4 = 100 / 4 = 25."
+  },
+  {
+    "id": "ap8",
+    "cat": "Aptitude",
+    "q": "A sum of money doubles itself in 8 years at simple interest. What is the rate of interest?",
+    "options": [
+      "10%",
+      "12.5%",
+      "15%",
+      "20%"
+    ],
+    "correct": 1,
+    "explain": "Doubling means SI = principal, so rate = 100 / 8 = 12.5% per year."
+  },
+  {
+    "id": "ap9",
+    "cat": "Aptitude",
+    "q": "If today is Monday, what day will it be after 15 days?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "correct": 1,
+    "explain": "15 mod 7 = 1, so it advances one day from Monday to Tuesday."
+  },
+  {
+    "id": "ap10",
+    "cat": "Aptitude",
+    "q": "What is the least common multiple (LCM) of 4 and 6?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "24"
+    ],
+    "correct": 2,
+    "explain": "The smallest number divisible by both 4 and 6 is 12."
+  },
+  {
+    "id": "ap11",
+    "cat": "Aptitude",
+    "q": "If x + 5 = 12, what is the value of x?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2,
+    "explain": "x = 12 − 5 = 7."
+  },
+  {
+    "id": "ap12",
+    "cat": "Aptitude",
+    "q": "A car covers a distance in 4 hours at 60 km/h. How long will it take at 80 km/h?",
+    "options": [
+      "2 hours",
+      "3 hours",
+      "3.5 hours",
+      "4 hours"
+    ],
+    "correct": 1,
+    "explain": "Distance = 60 × 4 = 240 km; time at 80 km/h = 240 / 80 = 3 hours."
+  },
+  {
+    "id": "db1",
+    "cat": "DBMS",
+    "q": "What does DBMS stand for?",
+    "options": [
+      "Data Base Management System",
+      "Database Management Software",
+      "Data Backup Management System",
+      "Database Modeling System"
+    ],
+    "correct": 0,
+    "explain": "DBMS = Database Management System, software for storing and managing data."
+  },
+  {
+    "id": "db2",
+    "cat": "DBMS",
+    "q": "Which SQL command retrieves data from a database?",
+    "options": [
+      "GET",
+      "SELECT",
+      "FETCH",
+      "RETRIEVE"
+    ],
+    "correct": 1,
+    "explain": "'SELECT' is used to query and retrieve rows from one or more tables."
+  },
+  {
+    "id": "db3",
+    "cat": "DBMS",
+    "q": "What is a primary key?",
+    "options": [
+      "A key that can have duplicate values",
+      "A unique identifier for each row in a table",
+      "A reference to another table",
+      "An index that allows nulls"
+    ],
+    "correct": 1,
+    "explain": "A primary key uniquely identifies each record and cannot be null or duplicated."
+  },
+  {
+    "id": "db4",
+    "cat": "DBMS",
+    "q": "Which normal form removes partial dependency on a composite key?",
+    "options": [
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
+    ],
+    "correct": 1,
+    "explain": "2NF requires every non-key attribute to depend on the whole primary key, not just part of it."
+  },
+  {
+    "id": "db5",
+    "cat": "DBMS",
+    "q": "What does ACID stand for in database transactions?",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Accuracy, Consistency, Integrity, Durability",
+      "Atomicity, Concurrency, Isolation, Data",
+      "Availability, Consistency, Isolation, Durability"
+    ],
+    "correct": 0,
+    "explain": "ACID properties guarantee reliable processing of database transactions."
+  },
+  {
+    "id": "db6",
+    "cat": "DBMS",
+    "q": "Which SQL clause filters groups of rows after aggregation?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "GROUP BY",
+      "FILTER"
+    ],
+    "correct": 1,
+    "explain": "'HAVING' filters aggregated groups, while 'WHERE' filters rows before grouping."
+  },
+  {
+    "id": "db7",
+    "cat": "DBMS",
+    "q": "What is a foreign key used for?",
+    "options": [
+      "To uniquely identify a row in its own table",
+      "To link a table to a related table",
+      "To speed up sorting only",
+      "To encrypt sensitive columns"
+    ],
+    "correct": 1,
+    "explain": "A foreign key references the primary key of another table, enforcing referential integrity."
+  },
+  {
+    "id": "db8",
+    "cat": "DBMS",
+    "q": "Which JOIN returns all rows from both tables, matching where possible?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "correct": 3,
+    "explain": "A FULL OUTER JOIN keeps unmatched rows from both sides, filling gaps with NULLs."
+  },
+  {
+    "id": "db9",
+    "cat": "DBMS",
+    "q": "What does SQL stand for?",
+    "options": [
+      "Structured Query Language",
+      "Simple Query Language",
+      "Sequential Query Language",
+      "Structured Question Language"
+    ],
+    "correct": 0,
+    "explain": "SQL (Structured Query Language) is used to query and manage relational databases."
+  },
+  {
+    "id": "db10",
+    "cat": "DBMS",
+    "q": "Which command removes a table's entire structure from a database?",
+    "options": [
+      "DELETE",
+      "TRUNCATE",
+      "DROP",
+      "REMOVE"
+    ],
+    "correct": 2,
+    "explain": "'DROP TABLE' deletes the table definition and all its data permanently."
+  },
+  {
+    "id": "db11",
+    "cat": "DBMS",
+    "q": "What is denormalization?",
+    "options": [
+      "Splitting tables to reduce redundancy",
+      "Combining tables to improve read performance",
+      "Deleting duplicate rows automatically",
+      "Creating indexes on every column"
+    ],
+    "correct": 1,
+    "explain": "Denormalization intentionally adds redundancy to speed up reads, trading off write efficiency."
+  },
+  {
+    "id": "db12",
+    "cat": "DBMS",
+    "q": "Which type of key uniquely identifies a record by referencing another table?",
+    "options": [
+      "Primary key",
+      "Candidate key",
+      "Foreign key",
+      "Composite key"
+    ],
+    "correct": 2,
+    "explain": "A foreign key in one table points to the primary key of another table."
+  },
+  {
+    "id": "os1",
+    "cat": "OS",
+    "q": "What does OS stand for?",
+    "options": [
+      "Operating System",
+      "Operational Software",
+      "Output System",
+      "Operating Software"
+    ],
+    "correct": 0,
+    "explain": "An Operating System manages hardware and software resources on a computer."
+  },
+  {
+    "id": "os2",
+    "cat": "OS",
+    "q": "Which scheduling algorithm gives priority to the job with the smallest execution time?",
+    "options": [
+      "FCFS",
+      "Round Robin",
+      "SJF",
+      "Priority Scheduling"
+    ],
+    "correct": 2,
+    "explain": "SJF (Shortest Job First) picks the process with the smallest burst time next."
+  },
+  {
+    "id": "os3",
+    "cat": "OS",
+    "q": "What is a deadlock in an operating system?",
+    "options": [
+      "A process running too fast",
+      "A situation where processes wait indefinitely for each other's resources",
+      "A memory leak",
+      "A file system corruption error"
+    ],
+    "correct": 1,
+    "explain": "A deadlock occurs when processes hold resources while waiting on each other, so none can proceed."
+  },
+  {
+    "id": "os4",
+    "cat": "OS",
+    "q": "What is the purpose of virtual memory?",
+    "options": [
+      "To speed up the CPU clock",
+      "To extend usable memory using disk space",
+      "To store the OS kernel only",
+      "To manage network connections"
+    ],
+    "correct": 1,
+    "explain": "Virtual memory lets the OS use disk space to simulate extra RAM for running processes."
+  },
+  {
+    "id": "os5",
+    "cat": "OS",
+    "q": "Which of these is a valid process state?",
+    "options": [
+      "Ready",
+      "Ended",
+      "Loaded",
+      "Compiled"
+    ],
+    "correct": 0,
+    "explain": "A process can be in states like New, Ready, Running, Waiting and Terminated."
+  },
+  {
+    "id": "os6",
+    "cat": "OS",
+    "q": "What is a thread?",
+    "options": [
+      "A separate standalone program",
+      "The smallest unit of CPU execution within a process",
+      "A type of file",
+      "A memory address"
+    ],
+    "correct": 1,
+    "explain": "A thread is a lightweight execution unit that shares a process's resources."
+  },
+  {
+    "id": "os7",
+    "cat": "OS",
+    "q": "Which memory management technique divides memory into fixed-size blocks?",
+    "options": [
+      "Paging",
+      "Segmentation",
+      "Fragmentation",
+      "Swapping"
+    ],
+    "correct": 0,
+    "explain": "Paging splits memory into fixed-size pages to avoid external fragmentation."
+  },
+  {
+    "id": "os8",
+    "cat": "OS",
+    "q": "What does a semaphore do in an operating system?",
+    "options": [
+      "Encrypts data on disk",
+      "Controls access to shared resources between processes",
+      "Manages file permissions",
+      "Compiles source code"
+    ],
+    "correct": 1,
+    "explain": "A semaphore is a synchronization tool that prevents race conditions on shared resources."
+  },
+  {
+    "id": "os9",
+    "cat": "OS",
+    "q": "Which of these is an example of an operating system?",
+    "options": [
+      "MySQL",
+      "Linux",
+      "Photoshop",
+      "Chrome"
+    ],
+    "correct": 1,
+    "explain": "Linux is an operating system kernel/family; the others are applications."
+  },
+  {
+    "id": "os10",
+    "cat": "OS",
+    "q": "What is context switching?",
+    "options": [
+      "Switching between two open files",
+      "Saving and restoring CPU state so multiple processes can share the CPU",
+      "Changing the desktop theme",
+      "Rebooting the system"
+    ],
+    "correct": 1,
+    "explain": "Context switching lets the OS pause one process and resume another on the same CPU."
+  },
+  {
+    "id": "os11",
+    "cat": "OS",
+    "q": "What is the main function of a kernel?",
+    "options": [
+      "Manage the user interface only",
+      "Act as the core that manages system resources",
+      "Store user files permanently",
+      "Run applications exclusively"
+    ],
+    "correct": 1,
+    "explain": "The kernel is the core of the OS, managing CPU, memory, devices and processes."
+  },
+  {
+    "id": "os12",
+    "cat": "OS",
+    "q": "Which of these is NOT a type of operating system?",
+    "options": [
+      "Batch OS",
+      "Real-time OS",
+      "Distributed OS",
+      "Compiler OS"
+    ],
+    "correct": 3,
+    "explain": "'Compiler OS' isn't a real category — a compiler is a separate tool, not an OS type."
+  }
+]

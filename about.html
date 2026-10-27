@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About — Quizzy</title>
+<meta name="description" content="Why Quizzy exists, and how its SM-2 spaced-repetition engine helps you learn." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <nav>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./subjects.html">Subjects</a>
+      <a href="./test-selection.html">Tests</a>
+      <a href="./quiz.html">Quiz view</a>
+      <a href="./result.html">Results &amp; review</a>
+      <a href="./leaderboard.html">People</a>
+      <a href="./profile.html">Profile</a>
+      <a class="active" href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div><span class="pill">About</span><h2 style="margin-top:12px">Why Quizzy exists</h2><p class="small">A quiz that remembers what tripped you up — and brings it back.</p></div>
+    </div>
+
+    <section class="card">
+      <h3>Our mission</h3>
+      <p class="small" style="margin-top:10px;line-height:1.7">Most quiz apps treat every question the same way, every time. Quizzy doesn't. Every subject is built around the SM-2 spaced-repetition algorithm — the same scheduling idea behind tools like Anki — so a question you get wrong shows up again soon, and a question you've clearly mastered gets out of your way for longer. The goal isn't more questions; it's the right question at the right time.</p>
+    </section>
+
+    <section class="grid g2" style="margin-top:22px">
+      <section class="card">
+        <h3>How the adaptive engine works</h3>
+        <div class="stack small" style="margin-top:14px">
+          <div class="option" style="cursor:default">Each test pulls 6 questions per subject.</div>
+          <div class="option" style="cursor:default">Anything overdue for review comes first.</div>
+          <div class="option" style="cursor:default">Wrong answers reset their schedule — they resurface in your very next attempt on that subject.</div>
+          <div class="option" style="cursor:default">Correct, fast answers push a question further into the future.</div>
+        </div>
+      </section>
+      <section class="card">
+        <h3>What that means for you</h3>
+        <p class="small" style="margin-top:10px;line-height:1.7">You stop wasting time re-answering things you already know, and stop losing track of the things you don't. Test 1 and Test 2 are free for every subject; Test 3 unlocks with Premium for a deeper, more advanced pass at the same subject.</p>
+      </section>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <h3>Built for focused, self-paced learners</h3>
+      <p class="small" style="margin-top:10px;line-height:1.7">Quizzy started as a small HTML/CSS/JavaScript question bank and grew into a subject-wise adaptive platform with dashboards, streaks, achievements and a leaderboard — while keeping the same core scheduling logic from day one. Your progress lives in your account and stays with you between sessions.</p>
+      <a class="btn btn-accent" href="./subjects.html" style="margin-top:16px">Start learning →</a>
+    </section>
+  </main>
+</div>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

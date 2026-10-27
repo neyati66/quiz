@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Create your account — Quizzy</title>
+<meta name="description" content="Create a Quizzy account to start subject-wise quizzes and track your reviews." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<main class="auth"> 
+  <section class="auth-visual">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <img src="./images/auth-illustration.png" alt="Illustration of a learner planning study milestones" />
+    <div>
+      <h2>Unfold your path of steady mastery</h2>
+      <p>Set up your dashboard in minutes and get access to subject libraries, timed tests and detailed answer reviews.</p>
+    </div>
+    <p class="small">★ Built for focused, self-paced learners.</p>
+  </section>
+
+  <section class="auth-form">
+    <form class="auth-card reveal">
+      <h2>Create your account</h2>
+      <p class="small">Begin your quiz journey today.</p>
+      <div class="oauth">
+        <button class="btn btn-ghost" type="button">Google</button>
+        <button class="btn btn-ghost" type="button">Apple</button>
+      </div>
+      <div class="divider">or register with email</div>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input class="input" id="name" type="text" placeholder="Your name" />
+        <p class="field-error" id="name-error"></p>
+      </div>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input class="input" id="email" type="email" placeholder="you@example.com" />
+        <p class="field-error" id="email-error"></p>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input class="input" id="password" type="password" placeholder="••••••••" />
+        <p class="password-hint">At least 8 characters, incl. uppercase, lowercase, number &amp; special character.</p>
+        <p class="field-error" id="password-error"></p>
+      </div>
+      <div class="field">
+        <label for="confirmPassword">Confirm password</label>
+        <input class="input" id="confirmPassword" type="password" placeholder="••••••••" />
+        <p class="field-error" id="confirmPassword-error"></p>
+      </div>
+      <button class="btn btn-accent btn-block" type="button" style="margin-top:18px">Create free account</button>
+      <p class="small center" style="margin-top:14px">Already have an account? <a class="link" href="./login.html">Log in</a></p>
+    </form>
+  </section>
+</main>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/validation.js"></script>
+  <script src="./js/signup.js"></script>
+</body>
+</html>

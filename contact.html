@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Quizzy</title>
+<meta name="description" content="Get in touch with the Quizzy team." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <nav>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./subjects.html">Subjects</a>
+      <a href="./test-selection.html">Tests</a>
+      <a href="./quiz.html">Quiz view</a>
+      <a href="./result.html">Results &amp; review</a>
+      <a href="./leaderboard.html">People</a>
+      <a href="./profile.html">Profile</a>
+      <a href="./about.html">About</a>
+      <a class="active" href="./contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div><span class="pill">Contact</span><h2 style="margin-top:12px">Get in touch</h2><p class="small">Questions, feedback or a bug to report — we'd like to hear it.</p></div>
+    </div>
+
+    <section class="grid g2">
+      <section class="card">
+        <h3>Send a message</h3>
+        <form class="stack" id="contact-form" style="margin-top:14px">
+          <div class="field"><label for="cname">Name</label><input class="input" id="cname" type="text" placeholder="Your name" /></div>
+          <div class="field"><label for="cemail">Email</label><input class="input" id="cemail" type="email" placeholder="you@example.com" /></div>
+          <div class="field"><label for="csubject">Subject</label><input class="input" id="csubject" type="text" placeholder="What's this about?" /></div>
+          <div class="field"><label for="cmessage">Message</label><textarea class="input" id="cmessage" rows="5" placeholder="How can we help?"></textarea></div>
+          <button class="btn btn-accent btn-block" type="submit" style="margin-top:6px">Send message</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h3>Contact information</h3>
+        <div class="stack small" style="margin-top:14px">
+          <div class="option" style="cursor:default">📧 support@quizzy.example</div>
+          <div class="option" style="cursor:default">🕘 Replies within 1–2 business days</div>
+          <div class="option" style="cursor:default">📍 Remote-first team</div>
+        </div>
+        <h3 style="margin-top:22px">FAQ</h3>
+        <div class="stack small" style="margin-top:14px">
+          <div class="option" style="cursor:default"><b>Is Test 1 &amp; 2 really free?</b><br>Yes — every subject's first two tests are free, always.</div>
+          <div class="option" style="cursor:default"><b>What does Premium unlock?</b><br>Test 3 for every subject, our most advanced question set.</div>
+          <div class="option" style="cursor:default"><b>Is my progress saved?</b><br>Yes, it's tied to your account and persists across sessions.</div>
+        </div>
+      </section>
+    </section>
+  </main>
+</div>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("cname").value.trim();
+      const email = document.getElementById("cemail").value.trim();
+      const subject = document.getElementById("csubject").value.trim();
+      const message = document.getElementById("cmessage").value.trim();
+      if (!name || !email || !message) { Notify.showError("Please fill in your name, email and message."); return; }
+      if (!Auth.isValidEmail(email)) { Notify.showError("That email address doesn't look valid."); return; }
+
+      const entry = { name, email, subject, message, sentAt: Date.now() };
+      // Full history persists in localStorage; the most recent submission is
+      // also mirrored to sessionStorage for this tab/visit.
+      try {
+        const KEY = "quizzy_contact_messages_v1";
+        const all = JSON.parse(localStorage.getItem(KEY) || "[]");
+        all.push(entry);
+        localStorage.setItem(KEY, JSON.stringify(all));
+        sessionStorage.setItem("quizzy_last_contact_v1", JSON.stringify(entry));
+      } catch (err) { /* storage unavailable — still show success, don't block the user */ }
+
+      this.reset();
+      Notify.showSuccess("Message sent — we'll get back to you soon.");
+    });
+  </script>
+</body>
+</html>

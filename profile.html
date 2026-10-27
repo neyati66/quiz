@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Profile — Quizzy</title>
+<meta name="description" content="Manage your Quizzy account details, preferences and attempt history." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <nav>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./subjects.html">Subjects</a>
+      <a href="./test-selection.html">Tests</a>
+      <a href="./quiz.html">Quiz view</a>
+      <a href="./result.html">Results &amp; review</a>
+      <a href="./leaderboard.html">People</a>
+      <a class="active" href="./profile.html">Profile</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div><span class="pill">Account</span><h2 style="margin-top:12px">Profile</h2><p class="small">Account details load here after sign in.</p></div>
+      <a class="btn btn-ghost" href="./login.html">Sign out</a>
+    </div>
+
+    <section class="card" data-dynamic="profile-header">
+      <div class="row" style="gap:18px;flex-wrap:wrap">
+        <span class="avatar" style="width:68px;height:68px;font-size:22px">?</span>
+        <div><h3>Name placeholder</h3><p class="small">email@placeholder</p></div>
+        <button class="btn btn-sm" type="button" style="margin-left:auto">Edit profile</button>
+      </div>
+    </section>
+
+    <div class="grid g2" style="margin-top:22px">
+      <section class="card">
+        <h3>Account details</h3>
+        <div class="field"><label for="pname">Full name</label><input class="input" id="pname" type="text" placeholder="Your name" /></div>
+        <div class="field"><label for="pemail">Email address</label><input class="input" id="pemail" type="email" placeholder="you@example.com" /></div>
+        <div class="field"><label for="plevel">Study level</label><select class="input" id="plevel"><option>Select level</option></select></div>
+        <div class="field"><label for="pbio">About</label><textarea class="input" id="pbio" rows="3" placeholder="A short line about your goals"></textarea></div>
+        <button class="btn" type="button" style="margin-top:16px">Save changes</button>
+      </section>
+
+      <div class="stack">
+        <section class="card" data-dynamic="profile-stats">
+          <h3>Your numbers</h3>
+          <div class="grid g2" style="margin-top:14px">
+            <div class="card"><small class="muted">Tests</small><h2 style="margin-top:6px">—</h2></div>
+            <div class="card"><small class="muted">Accuracy</small><h2 style="margin-top:6px">—</h2></div>
+          </div>
+        </section>
+        <section class="card" data-dynamic="attempt-history">
+          <h3>Attempt history</h3>
+          <div class="empty" style="margin-top:14px"><div class="icon-chip">📄</div><b>No history yet</b><p class="small">Completed attempts will be listed here.</p></div>
+        </section>
+        <section class="card">
+          <h3>Preferences</h3>
+          <div class="stack small" style="margin-top:12px">
+            <label class="row between"><span>Email notifications</span><input type="checkbox" /></label>
+            <label class="row between"><span>Show me on leaderboard</span><input type="checkbox" /></label>
+            <label class="row between"><span>Timed mode by default</span><input type="checkbox" /></label>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/profile.js"></script>
+</body>
+</html>

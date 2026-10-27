@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quizzy — Learn, quiz and level up together</title>
+<meta name="description" content="Quizzy is a quiz and test platform for subject-wise practice, live tests and shared leaderboards." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <nav class="nav-links">
+      <a class="active" href="./index.html">Home</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./subjects.html">Subjects</a>
+      <a href="./leaderboard.html">Leaderboard</a>
+      <a href="./profile.html">Profile</a>
+    </nav>
+    <a class="btn btn-sm" href="./login.html">Sign in</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="pill">Practice · Test · Improve</span>
+        <h1 style="margin-top:16px">Curiosity is the seed of <span>learning</span> and <em>mastery</em></h1>
+        <p>Create and join quizzes in seconds. Pick a subject, choose a test, answer at your own pace and review every question afterwards.</p>
+        <div class="row" style="margin-top:24px">
+          <a class="btn btn-accent" href="./signup.html">Get started free</a>
+          <a class="btn btn-ghost" href="./subjects.html">Browse subjects</a>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <img src="./images/quiz-card.png" alt="Preview of a live Quizzy tournament question card" />
+      </div>
+    </div>
+    <div class="wrap stats" data-dynamic="platform-stats">
+      <div class="stat"><b>—</b><small>Quizzes</small></div>
+      <div class="stat"><b>—</b><small>Participants</small></div>
+      <div class="stat"><b>—</b><small>Subjects</small></div>
+      <div class="stat"><b>—</b><small>Questions</small></div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="center">
+      <span class="pill">Start here</span>
+      <h2 style="margin-top:14px">Where would you like to start?</h2>
+      <p>Four simple entry points into your practice routine.</p>
+    </div>
+    <div class="grid g4" style="margin-top:28px">
+      <a class="card card-hover center" href="./subjects.html"><div class="icon-chip" style="margin:0 auto">📚</div><h3 style="margin-top:12px">Subjects</h3><p class="small">Explore subject libraries</p></a>
+      <a class="card card-hover center" href="./test-selection.html"><div class="icon-chip" style="margin:0 auto;background:var(--mint)">🎯</div><h3 style="margin-top:12px">Take a test</h3><p class="small">Timed or practice mode</p></a>
+      <a class="card card-hover center" href="./result.html"><div class="icon-chip" style="margin:0 auto;background:var(--lemon)">🧾</div><h3 style="margin-top:12px">Review answers</h3><p class="small">Question-by-question</p></a>
+      <a class="card card-hover center" href="./leaderboard.html"><div class="icon-chip" style="margin:0 auto;background:var(--accent-soft)">🏅</div><h3 style="margin-top:12px">Leaderboard</h3><p class="small">Compare with peers</p></a>
+    </div>
+    <div class="grid g4" style="margin-top:18px">
+      <a class="card card-hover center career-option" data-career="engineering" href="./career-selection.html"><div class="icon-chip" style="margin:0 auto;background:var(--sky)">🛠️</div><h3 style="margin-top:12px">Engineering</h3><p class="small">Engineering entrance track</p></a>
+      <a class="card card-hover center career-option" data-career="doctor" href="./career-selection.html"><div class="icon-chip" style="margin:0 auto;background:var(--lemon)">🩺</div><h3 style="margin-top:12px">Doctor</h3><p class="small">Medical entrance track</p></a>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="row between" style="flex-wrap:wrap">
+      <div><span class="pill">Featured</span><h2 style="margin-top:14px">Featured quiz collections</h2></div>
+      <a class="btn btn-ghost btn-sm" href="./subjects.html">View all</a>
+    </div>
+    <div class="grid g3" style="margin-top:24px" data-dynamic="featured-quizzes">
+      <article class="card card-hover"><div class="empty"><div class="icon-chip">📘</div><b>Collection slot</b><p class="small">Featured quiz will appear here</p></div><div style="margin-top:16px"><div class="skeleton skel-80"></div><div class="skeleton skel-40"></div></div></article>
+      <article class="card card-hover"><div class="empty"><div class="icon-chip" style="background:var(--sky)">🧪</div><b>Collection slot</b><p class="small">Featured quiz will appear here</p></div><div style="margin-top:16px"><div class="skeleton skel-80"></div><div class="skeleton skel-40"></div></div></article>
+      <article class="card card-hover"><div class="empty"><div class="icon-chip" style="background:var(--lemon)">🌍</div><b>Collection slot</b><p class="small">Featured quiz will appear here</p></div><div style="margin-top:16px"><div class="skeleton skel-80"></div><div class="skeleton skel-40"></div></div></article>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="center"><h2>Learning designed like a breeze</h2><p>Three steps from question set to insight.</p></div>
+    <div class="grid g3" style="margin-top:26px">
+      <div class="card card-hover"><div class="icon-chip">①</div><h3 style="margin-top:12px">Pick your subject</h3><p class="small">Choose a subject and a chapter to focus on.</p></div>
+      <div class="card card-hover"><div class="icon-chip" style="background:var(--mint)">②</div><h3 style="margin-top:12px">Attempt the test</h3><p class="small">Answer with a clean, distraction-free question view.</p></div>
+      <div class="card card-hover"><div class="icon-chip" style="background:var(--lemon)">③</div><h3 style="margin-top:12px">Review and improve</h3><p class="small">See explanations and track what to revisit.</p></div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="card newsletter-card" style="padding:34px;background:linear-gradient(140deg,#f6f1ff,#fff4f1)">
+      <div class="row between" style="flex-wrap:wrap;gap:18px">
+        <div style="max-width:460px"><h2>Stay inspired &amp; updated</h2><p>Get new question sets and test announcements in your inbox.</p></div>
+        <form class="row" style="gap:10px;flex-wrap:wrap"><input class="input" type="email" placeholder="you@example.com" style="width:260px" /><button class="btn btn-accent" type="button">Subscribe</button></form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div><a class="brand" href="./index.html" style="color:#fff"><i class="brand-mark">Q</i>Quiz<span>zy</span></a><p class="small" style="max-width:280px">A calm place to practice, test and review.</p></div>
+    <div class="stack small"><b style="color:#fff">Product</b><a href="./subjects.html">Subjects</a><a href="./test-selection.html">Tests</a><a href="./leaderboard.html">Leaderboard</a></div>
+    <div class="stack small"><b style="color:#fff">Account</b><a href="./login.html">Login</a><a href="./signup.html">Signup</a><a href="./profile.html">Profile</a></div>
+  </div>
+</footer>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/career.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

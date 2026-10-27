@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sign in — Quizzy</title>
+<meta name="description" content="Sign in to Quizzy to resume your subjects, tests and reviews." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<main class="auth">
+  <section class="auth-visual">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <img src="./images/auth-illustration.png" alt="Illustration of a learner tracking progress milestones" />
+    <div>
+      <h2>Welcome back to your space of practice</h2>
+      <p>Pick up exactly where you left off. Review your saved tests, revisit questions or start a new attempt.</p>
+    </div>
+    <p class="small">★ Built for focused, self-paced learners.</p>
+  </section>
+
+  <section class="auth-form">
+    <form class="auth-card reveal">
+      <h2>Welcome back</h2>
+      <p class="small">Sign in to resume your learning journey.</p>
+      <div class="oauth">
+        <button class="btn btn-ghost" type="button">Google</button>
+        <button class="btn btn-ghost" type="button">Apple</button>
+      </div>
+      <div class="divider">or log in with email</div>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input class="input" id="email" type="email" placeholder="you@example.com" />
+        <p class="field-error" id="email-error"></p>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input class="input" id="password" type="password" placeholder="••••••••" />
+        <p class="field-error" id="password-error"></p>
+      </div>
+      <div class="row between" style="margin-top:12px"><label class="small muted"><input type="checkbox" /> Remember me</label><a class="small link" href="#">Forgot password?</a></div>
+      <button class="btn btn-block" type="button" style="margin-top:18px">Sign in</button>
+      <p class="small center" style="margin-top:14px">Don't have an account? <a class="link" href="./signup.html">Sign up</a></p>
+    </form>
+  </section>
+</main>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/validation.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>

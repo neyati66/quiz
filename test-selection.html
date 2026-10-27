@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Choose a test — Quizzy</title>
+<meta name="description" content="Select a test type, difficulty and length before starting your Quizzy attempt." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <nav>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./subjects.html">Subjects</a>
+      <a class="active" href="./test-selection.html">Tests</a>
+      <a href="./quiz.html">Quiz view</a>
+      <a href="./result.html">Results &amp; review</a>
+      <a href="./leaderboard.html">People</a>
+      <a href="./profile.html">Profile</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div><span class="pill">Step 1 of 2</span><h2 style="margin-top:12px">Choose your test</h2><p class="small">Set the format, then start the attempt.</p></div>
+      <a class="small link" href="./subjects.html">← Back to subjects</a>
+    </div>
+
+    <div class="grid g3">
+      <div class="card card-hover"><div class="icon-chip">⚡</div><h3 style="margin-top:12px">Quick practice</h3><p class="small">Short untimed set for revision.</p></div>
+      <div class="card card-hover"><div class="icon-chip" style="background:var(--lemon)">⏳</div><h3 style="margin-top:12px">Timed test</h3><p class="small">Exam-style attempt with a countdown.</p></div>
+      <div class="card card-hover"><div class="icon-chip" style="background:var(--accent-soft)">🏁</div><h3 style="margin-top:12px">Challenge</h3><p class="small">Compete on the shared leaderboard.</p></div>
+    </div>
+
+    <div class="grid g2" style="margin-top:22px">
+      <section class="card">
+        <h3>Test settings</h3>
+        <div class="field"><label for="subject">Subject</label><select class="input" id="subject" data-dynamic="subject-options"><option>Select a subject</option></select></div>
+        <div class="field"><label for="chapter">Chapter / topic</label><select class="input" id="chapter" data-dynamic="chapter-options"><option>All topics</option></select></div>
+        <div class="field"><label for="difficulty">Difficulty</label><select class="input" id="difficulty"><option>Mixed</option><option>Easy</option><option>Medium</option><option>Hard</option></select></div>
+        <div class="field"><label for="count">Number of questions</label><input class="input" id="count" type="number" placeholder="e.g. 10" /></div>
+        <div class="field"><label for="duration">Duration (minutes)</label><input class="input" id="duration" type="number" placeholder="e.g. 15" /></div>
+        <a class="btn btn-block" href="./quiz.html" style="margin-top:18px">Start test</a>
+      </section>
+
+      <section class="card" data-dynamic="available-tests">
+        <h3>Available tests</h3>
+        <div class="empty" style="margin-top:14px"><div class="icon-chip" style="background:var(--sky)">📝</div><b>No tests loaded</b><p class="small">Tests for the selected subject appear here.</p></div>
+        <div style="margin-top:16px"><div class="skeleton skel-80"></div><div class="skeleton skel-60"></div><div class="skeleton skel-40"></div></div>
+      </section>
+    </div>
+  </main>
+</div>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/test-selection.js"></script>
+</body>
+</html>

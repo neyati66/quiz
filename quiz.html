@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quiz in progress — Quizzy</title>
+<meta name="description" content="Answer questions one at a time with a clean, distraction-free Quizzy test view." />
+<link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="./index.html"><i class="brand-mark">Q</i>Quiz<span>zy</span></a>
+    <span class="tag sky" style="margin-left:auto" data-dynamic="total-timer">⏱ Total 00:00</span>
+    <span class="tag lemon" data-dynamic="q-timer" style="margin-left:8px">● 30s</span>
+    <a class="btn btn-ghost btn-sm" href="./test-selection.html">Exit</a>
+  </div>
+</header>
+
+<main class="wrap section">
+  <div class="grid" style="grid-template-columns:1.6fr 0.8fr;gap:22px" id="quiz-layout">
+    <section class="card reveal">
+      <div class="row between small muted"><span data-dynamic="question-index">Question — of —</span><span class="tag lemon" data-dynamic="difficulty">Difficulty —</span></div>
+      <div class="progress" style="margin:12px 0 22px"><i style="width:0"></i></div>
+
+      <h3 data-dynamic="question-text" style="font-size:22px;line-height:1.35">Question text will be loaded here.</h3>
+
+      <div class="stack" style="margin-top:22px" data-dynamic="options">
+        <button class="option" type="button"><span class="key">A</span> Option placeholder</button>
+        <button class="option" type="button"><span class="key">B</span> Option placeholder</button>
+        <button class="option" type="button"><span class="key">C</span> Option placeholder</button>
+        <button class="option" type="button"><span class="key">D</span> Option placeholder</button>
+      </div>
+
+      <div class="row between" style="margin-top:26px">
+        <button class="btn btn-ghost" type="button">← Previous</button>
+        <div class="row"><button class="btn btn-ghost" type="button">Mark for review</button><button class="btn" type="button">Next →</button></div>
+      </div>
+    </section>
+
+    <aside class="stack">
+      <div class="card">
+        <h3>Question palette</h3>
+        <div class="qdots" style="margin-top:14px" data-dynamic="question-palette">
+          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+        </div>
+        <p class="small" style="margin-top:12px">Palette fills as questions load.</p>
+      </div>
+      <div class="card" data-dynamic="attempt-summary">
+        <h3>This attempt</h3>
+        <div class="stack small muted" style="margin-top:12px">
+          <div class="row between"><span>Answered</span><b>—</b></div>
+          <div class="row between"><span>Correct so far</span><b>—</b></div>
+          <div class="row between"><span>Remaining</span><b>—</b></div>
+        </div>
+        <button class="btn btn-accent btn-block" type="button" style="margin-top:16px">Submit test</button>
+      </div>
+    </aside>
+  </div>
+</main>
+  <script src="./js/api.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/theme.js?v=2"></script>
+  <script src="./js/questions.js?v=2"></script>
+  <script src="./js/sm2.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/quiz.js"></script>
+</body>
+</html>
